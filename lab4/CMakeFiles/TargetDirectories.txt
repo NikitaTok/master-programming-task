@@ -1,0 +1,9 @@
+/workspaces/master-programming-task/lab4/CMakeFiles/rebuild_cache.dir
+/workspaces/master-programming-task/lab4/CMakeFiles/tests_iterator.dir
+/workspaces/master-programming-task/lab4/CMakeFiles/edit_cache.dir
+/workspaces/master-programming-task/lab4/_deps/catch2-build/CMakeFiles/rebuild_cache.dir
+/workspaces/master-programming-task/lab4/_deps/catch2-build/CMakeFiles/edit_cache.dir
+/workspaces/master-programming-task/lab4/_deps/catch2-build/src/CMakeFiles/edit_cache.dir
+/workspaces/master-programming-task/lab4/_deps/catch2-build/src/CMakeFiles/Catch2WithMain.dir
+/workspaces/master-programming-task/lab4/_deps/catch2-build/src/CMakeFiles/rebuild_cache.dir
+/workspaces/master-programming-task/lab4/_deps/catch2-build/src/CMakeFiles/Catch2.dir

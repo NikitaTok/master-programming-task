@@ -15,47 +15,76 @@
 #include <boost/variant.hpp>
 
 //{ number
-using number = ...;
+struct number : public std::variant<int,float>
+{
+    using std::variant<int,float>::variant;
+};
 //}
 
 //{ array
-using array = ...;
+struct array : public std::vector<number>
+{
+    using std::vector<number>::vector;
+};
 //}
 
 //{ recursive_array
-struct recursive_array : public ...
+struct recursive_array : public std::vector<std::variant<number,std::shared_ptr<recursive_array>>>
 {
-
+    using std::vector<std::variant<number,std::shared_ptr<recursive_array>>>::vector;
 };
 //}
 
 //{ recursive_array2
-struct recursive_array2 : public ...
+struct recursive_array2 : public std::vector<std::variant<number,boost::recursive_wrapper<recursive_array2>>>
 {
-
+    using std::vector<std::variant<number, boost::recursive_wrapper<recursive_array2>>>::vector;
 };
 //}
 
 //{ variant_decorator
-template<???>
-struct variant_decorator
+template<typename... Types>
+struct variant_decorator : public std::variant<Types...>
 {
-    ?? as() const
-    {
+    using std::variant<Types...>::variant;
 
+    template<typename RetType> 
+    RetType& as()
+    {
+        
+        // If type of recursive_wrapper of RetType is equal to at least one of Types, return True
+        if constexpr (std::disjunction_v<std::is_same<boost::recursive_wrapper<RetType>, Types>...>)
+        {
+            return std::get<boost::recursive_wrapper<RetType>>(*this).get();
+        }
+        else
+        {
+            return std::get<RetType>(*this);
+        }
     }
 
-    ?? as()
+    
+    // overload for const
+    template<typename RetType>
+    RetType as() const
     {
-        return ??as()??;
+        if constexpr (std::disjunction_v<std::is_same<boost::recursive_wrapper<RetType>, Types>...>)
+        {
+            return std::get<boost::recursive_wrapper<RetType>>(*this).get();
+        }
+        else
+        {
+            return std::get<RetType>(*this);
+        }
     }
+
 };
 //}
 
 //{ recursive_map
-struct recursive_map : public ...
+struct recursive_map : public std::map<std::string, variant_decorator<int, std::string, bool, boost::recursive_wrapper<recursive_map>>>
 {
-
+    using std::map<std::string, variant_decorator<int, std::string, bool, boost::recursive_wrapper<recursive_map>>>::map;
 };
 //}
 
