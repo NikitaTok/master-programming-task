@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/tests_json_parser.dir/tests/json.cpp.o"
-  "CMakeFiles/tests_json_parser.dir/tests/quoted_string.cpp.o"
   "tests_json_parser"
   "tests_json_parser.pdb"
 )

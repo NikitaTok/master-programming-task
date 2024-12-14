@@ -14,21 +14,7 @@ variant
 json.hpp
 -
 parser.hpp
-/workspaces/master-programming-task/lab6/tests/parser.hpp
-
-/workspaces/master-programming-task/lab6/tests/parser.hpp
-boost/spirit/home/x3.hpp
 -
-string
--
-
-/workspaces/master-programming-task/lab6/tests/quoted_string.cpp
-catch2/catch_all.hpp
--
-json.hpp
--
-parser.hpp
-/workspaces/master-programming-task/lab6/tests/parser.hpp
 
 _deps/catch2-build/generated-includes/catch2/catch_user_config.hpp
 
@@ -1821,12 +1807,24 @@ boost/spirit/home/x3.hpp
 -
 boost/fusion/adapted/std_pair.hpp
 -
-../tests/parser.hpp
-tests/parser.hpp
+parser.hpp
+include/parser.hpp
+quoted_string.hpp
+include/quoted_string.hpp
+variant_decorator.hpp
+include/variant_decorator.hpp
 
-tests/parser.hpp
+parser_helper/include/parser.hpp
 boost/spirit/home/x3.hpp
 -
 string
+-
+
+parser_helper/include/quoted_string.hpp
+boost/spirit/home/x3.hpp
+-
+
+parser_helper/include/variant_decorator.hpp
+boost/spirit/home/x3/support/ast/variant.hpp
 -
 

@@ -14,6 +14,9 @@
 # EXTERNAL cache entries
 ########################
 
+//The directory containing a CMake configuration file for Boost.
+Boost_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/Boost-1.71.0
+
 //Read docs/configuration.md for details
 CATCH_CONFIG_ANDROID_LOGWRITE:BOOL=OFF
 
@@ -462,11 +465,14 @@ FETCHCONTENT_UPDATES_DISCONNECTED:BOOL=OFF
 //Enables UPDATE_DISCONNECTED behavior just for population of Catch2
 FETCHCONTENT_UPDATES_DISCONNECTED_CATCH2:BOOL=OFF
 
-//Value Computed by CMake
-lab6_BINARY_DIR:STATIC=/workspaces/master-programming-task/lab6
+//The directory containing a CMake configuration file for boost_headers.
+boost_headers_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/boost_headers-1.71.0
 
 //Value Computed by CMake
-lab6_SOURCE_DIR:STATIC=/workspaces/master-programming-task/lab6
+lab6_BINARY_DIR:STATIC=/workspaces/master-programming-task/lab6/parser_helper
+
+//Value Computed by CMake
+lab6_SOURCE_DIR:STATIC=/workspaces/master-programming-task/lab6/parser_helper
 
 
 ########################
@@ -605,7 +611,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=3
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=4
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -656,4 +662,6 @@ Catch2_GUID_CMAKE:INTERNAL=8d538cbe-01bf-4a2e-a98a-6c368fdf13d7
 HAVE_FLAG__ffile_prefix_map__workspaces_master_programming_task_lab6__deps_catch2_src__:INTERNAL=1
 //CMAKE_INSTALL_PREFIX during last run
 _GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX:INTERNAL=/usr/local
+//ADVANCED property for variable: boost_headers_DIR
+boost_headers_DIR-ADVANCED:INTERNAL=1
 

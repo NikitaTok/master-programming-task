@@ -1,6 +1,9 @@
 /workspaces/master-programming-task/lab6/CMakeFiles/rebuild_cache.dir
 /workspaces/master-programming-task/lab6/CMakeFiles/edit_cache.dir
 /workspaces/master-programming-task/lab6/CMakeFiles/tests_json_parser.dir
+/workspaces/master-programming-task/lab6/parser_helper/CMakeFiles/rebuild_cache.dir
+/workspaces/master-programming-task/lab6/parser_helper/CMakeFiles/tests_parser_helper.dir
+/workspaces/master-programming-task/lab6/parser_helper/CMakeFiles/edit_cache.dir
 /workspaces/master-programming-task/lab6/_deps/catch2-build/CMakeFiles/rebuild_cache.dir
 /workspaces/master-programming-task/lab6/_deps/catch2-build/CMakeFiles/edit_cache.dir
 /workspaces/master-programming-task/lab6/_deps/catch2-build/src/CMakeFiles/edit_cache.dir

@@ -5,13 +5,18 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/workspaces/master-programming-task/lab6/tests/json.cpp" "/workspaces/master-programming-task/lab6/CMakeFiles/tests_json_parser.dir/tests/json.cpp.o"
-  "/workspaces/master-programming-task/lab6/tests/quoted_string.cpp" "/workspaces/master-programming-task/lab6/CMakeFiles/tests_json_parser.dir/tests/quoted_string.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
+
+# Preprocessor definitions for this target.
+set(CMAKE_TARGET_DEFINITIONS_CXX
+  "BOOST_ALL_NO_LIB"
+  )
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "include"
+  "parser_helper/include"
   "_deps/catch2-src/src/catch2/.."
   "_deps/catch2-build/generated-includes"
   )

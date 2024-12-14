@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/workspaces/master-programming-task/lab6/_deps/catch2-build/cmake_install.cmake")
+  include("/workspaces/master-programming-task/lab6/parser_helper/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
